@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Todo List APP test</title>
+        <title>My Todo List</title>
         <style>
             body {
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background-color: #e9ecef;
+                background-color: #f8f9fa;
                 color: #343a40;
                 margin: 0;
                 padding: 0;
             }
 
             h1 {
-                background-color: #28a745;
+                background-color: #007bff;
                 color: white;
                 margin: 0;
                 padding: 25px;
@@ -31,7 +31,7 @@
 
             ul li {
                 background: #fff;
-                border: 1px solid #ced4da;
+                border: 1px solid #dee2e6;
                 margin-bottom: 15px;
                 padding: 15px;
                 position: relative;
@@ -53,11 +53,11 @@
             }
 
             ul li a:hover {
-                color: #28a745;
+                color: #007bff;
             }
 
             .delete-btn {
-                color: #e74c3c;
+                color: #dc3545;
                 position: absolute;
                 right: 15px;
                 top: 15px;
@@ -65,7 +65,7 @@
             }
 
             .edit-btn {
-                color: #f39c12;
+                color: #ffc107;
                 position: absolute;
                 right: 50px;
                 top: 15px;
@@ -101,7 +101,7 @@
             }
 
             input[type="submit"] {
-                background-color: #28a745;
+                background-color: #007bff;
                 color: white;
                 border: none;
                 padding: 12px 20px;
@@ -112,13 +112,13 @@
             }
 
             input[type="submit"]:hover {
-                background-color: #218838;
+                background-color: #0069d9;
             }
         </style>
     </head>
 
     <body>
-        <h1>Todo List - Made for Batch 7</h1>
+        <h1>Organize Your Tasks</h1>
         <ul>
             <% todolist.forEach(function(todo, index) { %>
             <li>
@@ -131,7 +131,7 @@
 
         <form action="/todo/add/" method="post">
             <p>
-                <label for="newtodo">What should I do?</label>
+                <label for="newtodo">Add a new task:</label>
                 <input type="text" name="newtodo" id="newtodo" autofocus />
                 <input type="submit" value="Add" />
             </p>
